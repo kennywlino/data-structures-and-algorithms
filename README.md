@@ -20,4 +20,6 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- CLASS-01:[Array Reverse](./javascript/array-reverse/README.md)
+- CLASS-01:[array-reverse](./javascript/array-reverse/README.md)
+- CLASS-02:[array-insert-shift](./javascript/array-insert-shift/README.md)
+- CLASS-03:[array-binary-search](./javascript/array-binary-search/README.md)
