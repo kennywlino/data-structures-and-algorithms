@@ -11,8 +11,8 @@ In this challenge, we must write a function `insertShiftArray` that takes in an 
 For this solution, we chose to define a new array and variable `middleIndex`. We also defined a for loop to iterate over the given array and add these elements to the new array until we reached the `middleIndex`. Once we reach the `middleIndex`, we add the given element to the new array at that point, and iterate over the rest of the given array, adding those elements one index over in the new array.
 
 Big O:
-space: (O)n
-time: (O)n
+space: O(n)
+time: O(n)
 
 ## My solution
 
