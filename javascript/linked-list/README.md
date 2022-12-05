@@ -6,16 +6,24 @@ In this lab, we implement our own LinkedList and Node class from scratch.
 
 The purpose of this challenge is to practice implementing the linked list data structure and also to practice writing tests for our code.
 
-## Approach & Efficiency
-
-Adding in a LinkedList is an O(1) operation when adding to the front. Searching is an O(n) operation.
-
 ## API
 
-The LinkedList class contains 3 functions:
+The LinkedList class contains the following functions:
 
-- insert() -- to add a new item to the front of the LinkedList
-- includes() -- to find whether a given value is in the LinkedList
-- toString() -- a string representaiton of the LinkedList
+- `insert()` -- to add a new Node to the front of the LinkedList
+- `includes()` -- to find whether a given value is in the LinkedList
+- `toString()` -- a string representation of the LinkedList
+- `append()` -- to add a new Node to the end of the LinkedList
+- `insertBefore(targetValue, value)` -- to add a new Node before the first instance of the targetValue
+- `insertAfter(targetValue, value)` -- to add a new Node after the first instance of the targetValue
 
+## Approach & Efficiency
 
+Here are the Big O time complexities for the above functions:
+
+- `insert()` -- O(1)
+- `includes()` -- O(n)
+- `toString()` -- O(n)
+- `append()` -- O(n)
+- `insertBefore(targetValue, value)` -- O(n)
+- `insertAfter(targetValue, value)` -- O(n)
