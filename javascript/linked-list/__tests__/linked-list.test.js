@@ -39,4 +39,12 @@ describe('Linked List', () => {
   test('returns a collection of all the values', () => {
     expect(list.toString()).toEqual('{ 3 } -> { 2 } -> { 1 } -> NULL');
   });
+
+  test('appends a node to the end', () => {
+    list.append(4);
+    expect(list.head.value).toEqual(3);
+    expect(list.head.next.value).toEqual(2);
+    expect(list.head.next.next.value).toEqual(1);
+    expect(list.head.next.next.next.value).toEqual(4);
+  });
 });
