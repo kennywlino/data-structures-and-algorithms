@@ -47,4 +47,23 @@ describe('Linked List', () => {
     expect(list.head.next.next.value).toEqual(1);
     expect(list.head.next.next.next.value).toEqual(4);
   });
+
+  test('inserts a new value before the first occurrence of a target value', () => {
+    list.insertBefore(2, 777);
+    expect(list.head.value).toEqual(3);
+    expect(list.head.next.value).toEqual(777);
+    expect(list.head.next.next.value).toEqual(2);
+    expect(list.head.next.next.next.value).toEqual(1);
+    expect(list.head.next.next.next.next.value).toEqual(4);
+  });
+
+  test('inserts a new value after the first occurrence of a target value', () => {
+    list.insertAfter(1, 99);
+    expect(list.head.value).toEqual(3);
+    expect(list.head.next.value).toEqual(777);
+    expect(list.head.next.next.value).toEqual(2);
+    expect(list.head.next.next.next.value).toEqual(1);
+    expect(list.head.next.next.next.next.value).toEqual(99);
+    expect(list.head.next.next.next.next.next.value).toEqual(4);
+  });
 });
