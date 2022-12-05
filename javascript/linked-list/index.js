@@ -40,8 +40,9 @@ class LinkedList {
     while (current.next) {
       let valueStr = `{ ${current.value} } -> `;
       string = string + valueStr;
+      current = current.next;
     }
-    string = string + 'NULL';
+    string = string + `{ ${current.value} } -> NULL`;
     return string;
   }
 }
