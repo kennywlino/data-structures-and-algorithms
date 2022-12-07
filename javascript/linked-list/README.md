@@ -16,6 +16,7 @@ The LinkedList class contains the following functions:
 - `append()` -- to add a new Node to the end of the LinkedList
 - `insertBefore(targetValue, value)` -- to add a new Node before the first instance of the targetValue
 - `insertAfter(targetValue, value)` -- to add a new Node after the first instance of the targetValue
+- `kthFromEnd(k)` -- to find a value that is  **k** elements away from the end
 
 ## Approach & Efficiency
 
@@ -27,3 +28,9 @@ Here are the Big O time complexities for the above functions:
 - `append()` -- O(n)
 - `insertBefore(targetValue, value)` -- O(n)
 - `insertAfter(targetValue, value)` -- O(n)
+- `kthFromEnd(k)` -- O(n^2)
+
+## Whiteboards
+
+### CLASS-07: kth-from-end
+![kth-from-end](./kth-from-end.jpeg)
