@@ -3,7 +3,7 @@
 // Require our linked list implementation
 const LinkedList = require('../index');
 
-// linkedList should look like 0, 3, 777, 2, 1, 4, 5, 6, 7 at the end
+// linkedList should look like 0, 3, 777, 2, 1, 99, 4, 5, 6, 7 at the end
 describe('Linked List', () => {
   let list = new LinkedList();
   test('instantiates an empty list', () => {
@@ -96,7 +96,7 @@ describe('Linked List', () => {
     expect(list.head.next.next.next.next.next.next.next.next.value).toEqual(6);
   });
 
-  test('inserts a new value after the first occurence of a target value located at the end', () => {
+  test('inserts a new value after the first occurrence of a target value located at the end', () => {
     list.insertAfter(6, 7);
     expect(list.head.value).toEqual(0);
     expect(list.head.next.value).toEqual(3);
@@ -108,5 +108,34 @@ describe('Linked List', () => {
     expect(list.head.next.next.next.next.next.next.next.value).toEqual(5);
     expect(list.head.next.next.next.next.next.next.next.next.value).toEqual(6);
     expect(list.head.next.next.next.next.next.next.next.next.next.value).toEqual(7);
+  });
+
+  test('kthFromEnd works when k value is valid', () => {
+    expect(list.kthFromEnd(4)).toEqual(99);
+  });
+
+  // LL: 0, 3, 777, 2, 1, 99, 4, 5, 6, 7
+  // len: 10
+  test('kthFromEnd fails when k value is greater than the length of the list', () => {
+    expect(() => {
+      list.kthFromEnd(20);
+    }).toThrow();
+  });
+
+  test('kthFromEnd fails when k value is negative', () => {
+    expect(() => {
+      list.kthFromEnd(-5);
+    }).toThrow();
+  });
+
+  // LL: 100
+  // len: 1
+  test('kthFromEnd fails when linked list is of size 1 and k is 1', () => {
+    list.head = null;
+    list.insert(100);
+    console.log(list.head);
+    expect(() => {
+      list.kthFromEnd(1);
+    }).toThrow();
   });
 });
