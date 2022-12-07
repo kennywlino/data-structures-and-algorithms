@@ -96,6 +96,40 @@ class LinkedList {
       }
     }
   }
+
+  // finds the node's value that is k places from the tail
+  kthFromEnd(k) {
+    if (k < 0) {
+      throw new RangeError('k is out of range');
+    }
+
+    let current = this.head;
+    let indexCounter = 0;
+
+    // finding the last index
+    while (current.next) {
+      current = current.next;
+      indexCounter = indexCounter + 1;
+
+    }
+
+    // reset the current pointer to the beginning
+    current = this.head;
+    let kIndex = indexCounter - k;
+    let currentIndex = 0;
+
+    if (kIndex < 0) {
+      throw new RangeError('k is out of range');
+    }
+
+    // only loop until the kIndex
+    while (currentIndex < kIndex) {
+      current = current.next;
+      currentIndex += 1;
+
+    }
+    return current.value;
+  }
 }
 
 module.exports = LinkedList;
