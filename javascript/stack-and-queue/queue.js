@@ -20,7 +20,7 @@ class Queue {
   }
 
   dequeue() {
-    if(!this.isEmpty) {
+    if(!this.isEmpty()) {
       let oldFront = this.front;
       this.front = oldFront.next;
       oldFront.next = null;
@@ -31,7 +31,7 @@ class Queue {
   }
 
   peek() {
-    if(!this.isEmpty) {
+    if(!this.isEmpty()) {
       return this.front.value;
     } else {
       throw new Error('Queue is empty.');
