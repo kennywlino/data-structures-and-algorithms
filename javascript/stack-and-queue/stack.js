@@ -16,7 +16,7 @@ class Stack {
 
   // removes and returns the Node value at the top
   pop() {
-    if(!this.isEmpty) {
+    if(!this.isEmpty()) {
       let oldTop = this.top;
       this.top = oldTop.next;
       oldTop.next = null;
@@ -28,7 +28,7 @@ class Stack {
 
   // returns the value of the top Node
   peek() {
-    if(!this.isEmpty) {
+    if(!this.isEmpty()) {
       return this.top.value;
     } else {
       throw new Error('Stack is empty.');
