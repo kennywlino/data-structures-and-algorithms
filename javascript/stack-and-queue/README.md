@@ -60,4 +60,4 @@ Here are the Big O time complexities for the above functions:
 ## Whiteboards
 
 ### CLASS-11: PseudoQueue
-- [PseudoQueue](./assets/CLASS-11_%20stack-queue-pseudo.jpeg)
+- ![PseudoQueue](./assets/CLASS-11_%20stack-queue-pseudo.jpeg)
