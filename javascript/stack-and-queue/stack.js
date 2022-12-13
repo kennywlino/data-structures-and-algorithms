@@ -20,7 +20,7 @@ class Stack {
       let oldTop = this.top;
       this.top = oldTop.next;
       oldTop.next = null;
-      return oldTop.value;
+      return oldTop;
     } else {
       throw new Error('Stack is empty.');
     }
@@ -29,7 +29,7 @@ class Stack {
   // returns the value of the top Node
   peek() {
     if(!this.isEmpty()) {
-      return this.top.value;
+      return this.top;
     } else {
       throw new Error('Stack is empty.');
     }

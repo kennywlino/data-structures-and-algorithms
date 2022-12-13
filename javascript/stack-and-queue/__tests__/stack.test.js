@@ -32,11 +32,11 @@ describe('Stack', () => {
   // TOP: 2
   //      1
   test('can pop off a single value', () => {
-    expect(stack.pop()).toEqual(3);
+    expect(stack.pop().value).toEqual(3);
   });
 
   test('can peek at the top Node value', () => {
-    expect(stack.peek()).toEqual(2);
+    expect(stack.peek().value).toEqual(2);
   });
 
   // after this test stack is:
