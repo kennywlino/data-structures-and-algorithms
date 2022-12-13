@@ -3,9 +3,9 @@
 const Queue = require('../queue');
 let queue = new Queue();
 
-describe('Stack', () => {
+describe('Queue', () => {
 
-  test('can instantiate an empty stack', () => {
+  test('can instantiate an empty queue', () => {
     expect(queue).toBeTruthy();
     expect(queue.isEmpty).toBeTruthy();
   });
@@ -16,10 +16,8 @@ describe('Stack', () => {
   });
 
   test('can enqueue multiple values', () => {
-    console.log(queue.front);
     queue.enqueue(2);
     queue.enqueue(3);
-    console.log(queue.front);
     expect(queue.front.value).toEqual(1);
     expect(queue.front.next.value).toEqual(2);
     expect(queue.front.next.next.value).toEqual(3);
