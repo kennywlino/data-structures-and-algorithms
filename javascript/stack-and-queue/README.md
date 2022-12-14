@@ -8,6 +8,8 @@ The purpose of this challenge is to practice implementing the Stack and Queue da
 
 We also add a PseudoQueue class created by utilizing two Stacks to maintain the state of the Queue.
 
+We also add an AnimalShelter class that allows us to specify a specific animal to enqueue and a specific animal preference to dequeue and return the first instance.
+
 ## API
 
 ### Stack
@@ -29,6 +31,10 @@ The Queue class contains the following functions:
 - `isEmpty()` -- returns a Boolean indicating whether or not the queue is empty.
 
 ### PseudoQueue
+
+Same functions as Queue.
+
+### AnimalShelter
 
 Same functions as Queue.
 
@@ -57,7 +63,15 @@ Here are the Big O time complexities for the above functions:
 - `peek()` -- O(1)
 - `isEmpty()` -- O(1)
 
+### AnimalShelter
+
+- `enqueue(animal)` -- O(1) -- just adding to the back
+- `dequeue(pref)` -- O(n) -- have to walkthrough all elements to find preference
+
 ## Whiteboards
 
 ### CLASS-11: PseudoQueue
 - ![PseudoQueue](./assets/CLASS-11_%20stack-queue-pseudo.jpeg)
+
+### CLASS-12: AnimalShelter
+- ![AnimalShelter](./assets/CLASS-12_%20stack-queue-animal-shelter.jpeg)
