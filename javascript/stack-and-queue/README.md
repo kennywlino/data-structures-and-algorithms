@@ -10,6 +10,8 @@ We also add a PseudoQueue class created by utilizing two Stacks to maintain the 
 
 We also add an AnimalShelter class that allows us to specify a specific animal to enqueue and a specific animal preference to dequeue and return the first instance.
 
+In Class-13, we write a `validateBrackets()` function to validate whether all brackets have been closed in a string.
+
 ## API
 
 ### Stack
@@ -37,6 +39,10 @@ Same functions as Queue.
 ### AnimalShelter
 
 Same functions as Queue.
+
+### validateBrackets
+
+- `validateBrackets(str)` -- takes in a string containing brackets `[`, `(`, `{` and returns a boolean based on whether all are closed or not
 
 ## Approach & Efficiency
 
@@ -68,10 +74,20 @@ Here are the Big O time complexities for the above functions:
 - `enqueue(animal)` -- O(1) -- just adding to the back
 - `dequeue(pref)` -- O(n) -- have to walkthrough all elements to find preference
 
+### validateBrackets
+
+- `validateBrackets(str)` -- O(n) -- have to walkthrough some/all characters
+
 ## Whiteboards
 
 ### CLASS-11: PseudoQueue
+
 - ![PseudoQueue](./assets/CLASS-11_%20stack-queue-pseudo.jpeg)
 
 ### CLASS-12: AnimalShelter
+
 - ![AnimalShelter](./assets/CLASS-12_%20stack-queue-animal-shelter.jpeg)
+
+### CLASS-13: validateBrackets
+
+- ![validateBrackets](./assets/CLASS-13_stack-queue-brackets.jpeg)
