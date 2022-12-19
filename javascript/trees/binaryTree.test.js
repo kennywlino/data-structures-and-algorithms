@@ -61,10 +61,10 @@ describe('Binary Tree/Binary Search Tree', () => {
   it('bst returns true when tree contains a value', () => {
     let bst = new BinarySearchTree();
     bst.add(3);
-    bst.add(3);
-    bst.add(3);
-    bst.add(3);
-    bst.add(3);
-    expect(bst.contains(3)).toBeTruthy();
+    bst.add(2);
+    bst.add(1);
+    bst.add(4);
+    bst.add(5);
+    expect(bst.contains(5)).toBeTruthy();
   });
 });

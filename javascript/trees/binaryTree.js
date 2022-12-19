@@ -75,7 +75,6 @@ class BinarySearchTree extends BinaryTree {
   }
 
   add(value) {
-
     const traverse = node => {
       if (!node) {
         this.root = new Node(value);
@@ -100,19 +99,19 @@ class BinarySearchTree extends BinaryTree {
   }
 
   contains(value) {
+    let containsBool = false;
     const traverse = node => {
       if (value === node.value) {
-        return true;
+        containsBool = true;
       } else if (value < node.value && node.left) {
         traverse(node.left);
       } else if (value > node.value && node.right) {
         traverse(node.right);
-      } else {
-        return false;
       }
     };
 
     traverse(this.root);
+    return containsBool;
   }
 }
 
