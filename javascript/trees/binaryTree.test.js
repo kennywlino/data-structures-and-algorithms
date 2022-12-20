@@ -67,4 +67,35 @@ describe('Binary Tree/Binary Search Tree', () => {
     bst.add(5);
     expect(bst.contains(5)).toBeTruthy();
   });
+
+  it('max value returns the correct value', () => {
+    let tree = new BinaryTree();
+    tree.root = new Node(1);
+    tree.root.left = new Node(2);
+    tree.root.right = new Node(3);
+    tree.root.left.left = new Node(4);
+    tree.root.left.right = new Node(5);
+    tree.root.right.right = new Node(6);
+    expect(tree.maxValue()).toEqual(6);
+  });
+  it('max value returns the correct value with floats', () => {
+    let tree = new BinaryTree();
+    tree.root = new Node(1.5);
+    tree.root.left = new Node(2.1);
+    tree.root.right = new Node(3.3);
+    tree.root.left.left = new Node(4.5);
+    tree.root.left.right = new Node(5.6);
+    tree.root.right.right = new Node(6.8);
+    expect(tree.maxValue()).toEqual(6.8);
+  });
+  it('max value returns the correct value with negative values', () => {
+    let tree = new BinaryTree();
+    tree.root = new Node(-1);
+    tree.root.left = new Node(-5);
+    tree.root.right = new Node(-2);
+    tree.root.left.left = new Node(-3);
+    tree.root.left.right = new Node(-4);
+    tree.root.right.right = new Node(-10);
+    expect(tree.maxValue()).toEqual(-1);
+  });
 });
