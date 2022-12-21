@@ -68,6 +68,23 @@ class BinaryTree {
     return traversedValues;
   }
 
+  breadthFirst() {
+    let queue = [];
+    let traversed = [];
+    queue.push(this.root);
+    while(queue.length > 0) {
+      let currentNode = queue.shift();
+      traversed.push(currentNode.value);
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+    }
+    return traversed;
+  }
+
   maxValue() {
     let maxValue;
     const traverse = node => {

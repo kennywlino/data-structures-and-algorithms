@@ -25,4 +25,6 @@ To run your tests
 - CLASS-03: [Array Binary Sum](./javascript/array-binary-search/README.md)
 - CLASS-04: [Matrix Sum](./javascript/matrix-sum/README.md)
 - CLASS-05 - CLASS-08: [Singly Linked List](./javascript/linked-list/README.md)
-- CLASS-10: [Stack and Queue](./javascript/stack-and-queue/README.md)
+- CLASS-10 - CLASS-13: [Stack and Queue](./javascript/stack-and-queue/README.md)
+- CLASS-15 - CLASS-16 : [Binary Tree](./javascript/trees/README.md)
+5

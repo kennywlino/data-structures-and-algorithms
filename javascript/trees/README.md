@@ -27,6 +27,8 @@ In CLASS-16, we add a function to the Binary Tree to find the maximum value with
 - preOrderTraversal
 - inOrderTraversal
 - postOrderTraversal
+- breadthFirst
+- maxValue
 
 ### Binary Search Tree
 
@@ -38,4 +40,9 @@ Extends Binary Tree with these added functions.
 ## Whiteboards
 
 ### CLASS-16: Tree Max Value
+
 ![tree-max](./assets/tree-max.png)
+
+### CLASS-17: Breadth First Traversal
+
+![breadth-first](./assets/breadth-first-tree.png)
