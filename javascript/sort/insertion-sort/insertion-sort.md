@@ -134,3 +134,11 @@ Again:
 To finally get to:
 
 `[4, 8, 15, 16, 23, 42]`
+
+## Efficiency
+
+- Time: O(n^2)
+  This is because we have a nested loop and because we would have to shift as many as all of the elements to the front of the list.
+
+- Space: O(1)
+  We are not creating anything new since the array is being sorted in place.
