@@ -1,6 +1,6 @@
 'use strict';
 
-const insertionSort = require('../index');
+const insertionSort = require('./index');
 
 describe('Insertion Sort', () => {
 

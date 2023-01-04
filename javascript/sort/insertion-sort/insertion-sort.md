@@ -23,7 +23,7 @@ Insertion sort is a sorting algorithm that can sort a sequence of elements by it
 
 ### Plain array
 
-Sample array: `[8, 4, 23, 42, 16, 15]`
+Array: `[8, 4, 23, 42, 16, 15]`
 
 #### Pass 1
 
