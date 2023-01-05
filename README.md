@@ -27,4 +27,4 @@ To run your tests
 - CLASS-05 - CLASS-08: [Singly Linked List](./javascript/linked-list/README.md)
 - CLASS-10 - CLASS-13: [Stack and Queue](./javascript/stack-and-queue/README.md)
 - CLASS-15 - CLASS-17: [Binary Tree](./javascript/trees/README.md)
-- CLASS-26 - : [Sort](./javascript/sort/README.md)
+- CLASS-26 - CLASS-28: [Sort](./javascript/sort/README.md)
