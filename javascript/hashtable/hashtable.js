@@ -1,6 +1,10 @@
 'use strict';
 
-const LinkedList = require('../linked-list');
+class Node {
+  constructor(value) {
+    this.value = value;
+  }
+}
 
 class HashTable {
   constructor(size){
@@ -25,10 +29,10 @@ class HashTable {
 
     if (this.buckets[position]) {
       let bucket = this.buckets[position];
-      bucket.insert(data);
+      bucket.value = data;
     } else {
-      let bucket = new LinkedList();
-      bucket.insert(data);
+      // bucket but only holds one
+      let bucket = new Node(data);
       this.buckets[position] = bucket;
     }
   }
@@ -38,19 +42,23 @@ class HashTable {
 
     if(this.buckets[position]) {
       let bucket = this.buckets[position];
-      let value = bucket.head.value[key];
+      let value = bucket.value[key];
       return value;
     }
   }
 
   has(key){
     let position = this.hash(key);
-    return this.buckets[position];
+    return this.buckets[position] !== null;
   }
 
-  // [{key, value}-{key, value}, ]
   keys(){
-    return this.buckets.filter(element => Object.keys(element));
+    let keys = [];
+    this.buckets.forEach(bucket => {
+      let bucketKeys = Object.keys(bucket.value);
+      keys = [...keys, ...bucketKeys];
+    });
+    return keys;
   }
 }
 
