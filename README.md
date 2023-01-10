@@ -28,4 +28,4 @@ To run your tests
 - CLASS-10 - CLASS-13: [Stack and Queue](./javascript/stack-and-queue/README.md)
 - CLASS-15 - CLASS-17: [Binary Tree](./javascript/trees/README.md)
 - CLASS-26 - CLASS-29: [Sort](./javascript/sort/README.md)
-- CLASS-30 - [Hash Table](./javascript/hashtable/README.md)
+- CLASS-30 - CLASS-32 [Hash Table](./javascript/hashtable/README.md)
