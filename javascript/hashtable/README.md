@@ -8,6 +8,8 @@ In CLASS-30, we are tasked with creating our own HashTable class and implementin
 
 In CLASS-31, we are tasked with using our HashTable implementation to take in a string and find the first repeated word.
 
+In CLASS-32, we are tasked with using our HashTable implementation to take in two binary trees and find the intersected values between both trees and return them as an array.
+
 ## Approach & Efficiency
 
 ### Implementation
@@ -21,6 +23,12 @@ In CLASS-31, we are tasked with using our HashTable implementation to take in a 
 ### Repeated Word
 
   - Time: O(n) since we have to iterate over all of the words. However, at a more granular level it may be possible to say O(n^2) since for each word we need to hash it, which iterates over each character.
+
+  - Space: O(n) since the buckets of our HashTable stores a bucket of 'size'.
+
+### Tree Interesction
+
+  - Time: O(n) since we have to iterate over all of the nodes.
 
   - Space: O(n) since the buckets of our HashTable stores a bucket of 'size'.
 
@@ -53,3 +61,4 @@ Returns: Index in the collection for that key
 ## Whiteboard
 
 ![CLASS-31: Repeated Word UML](./assets/CLASS-31_%20Whiteboard%20Challenge.jpeg)
+![CLASS-32: Tree Intersection UML](./assets/codeChallenge32.PNG)

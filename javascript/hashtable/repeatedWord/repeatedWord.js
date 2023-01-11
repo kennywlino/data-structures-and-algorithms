@@ -1,6 +1,6 @@
 'use strict';
 
-const HashTable = require('./hashtable');
+const HashTable = require('../hashtable');
 
 function repeatedWord(string){
   let table = new HashTable(1024);
