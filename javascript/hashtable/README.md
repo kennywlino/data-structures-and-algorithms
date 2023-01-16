@@ -10,6 +10,8 @@ In CLASS-31, we are tasked with using our HashTable implementation to take in a 
 
 In CLASS-32, we are tasked with using our HashTable implementation to take in two binary trees and find the intersected values between both trees and return them as an array.
 
+In CLASS-33, we are tasked with using our HashTable implementation to take in two HashTables and return an array of arrays that left join the data between the two HashTables.
+
 ## Approach & Efficiency
 
 ### Implementation
@@ -26,11 +28,16 @@ In CLASS-32, we are tasked with using our HashTable implementation to take in tw
 
   - Space: O(n) since the buckets of our HashTable stores a bucket of 'size'.
 
-### Tree Interesction
+### Tree Intersection
 
   - Time: O(n) since we have to iterate over all of the nodes.
 
   - Space: O(n) since the buckets of our HashTable stores a bucket of 'size'.
+
+### Left Join
+
+  - Time O(n) since we have to iterate over all the items in both trees.
+  - Space O(n) since we the data in an array
 
 ## Implementation API
 
@@ -62,3 +69,4 @@ Returns: Index in the collection for that key
 
 ![CLASS-31: Repeated Word UML](./assets/CLASS-31_%20Whiteboard%20Challenge.jpeg)
 ![CLASS-32: Tree Intersection UML](./assets/codeChallenge32.PNG)
+![CLASS-33: Left Join UML](./assets/codeChallenge33.jpeg)
