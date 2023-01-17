@@ -17,6 +17,7 @@ class LinkedList {
     let node = new Node(value);
     node.next = this.head;
     this.head = node;
+    return node;
   }
 
   // checks for value in all nodes of LinkedList
@@ -59,6 +60,7 @@ class LinkedList {
       }
       current.next = node;
     }
+    return node;
   }
 
   // inserts a value before the first matching targetValue

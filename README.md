@@ -29,3 +29,6 @@ To run your tests
 - CLASS-15 - CLASS-17: [Binary Tree](./javascript/trees/README.md)
 - CLASS-26 - CLASS-29: [Sort](./javascript/sort/README.md)
 - CLASS-30 - CLASS-32 [Hash Table](./javascript/hashtable/README.md)
+- CLASS-35 [Graphs](./javascript/graphs/README.md)
+- CLASS-36 [Tree Revisited: isSumTree](./javascript/tree/README.md)
+- CLASS-37 [Linked List Revisited: findCycleLength](./javascript/linked-list/README.md)
