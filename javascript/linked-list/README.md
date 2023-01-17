@@ -6,6 +6,8 @@ In this lab, we implement our own LinkedList and Node class from scratch.
 
 The purpose of this challenge is to practice implementing the linked list data structure and also to practice writing tests for our code.
 
+In CLASS-37, we were given the option to select any problem of our choice. For this code challenge, I chose to solve the problem `findCycleLength` where we are tasked with finding the length of a loop/cycle in a given linked list. If the linked list does not have a loop, it returns 0.
+
 ## API
 
 The LinkedList class contains the following functions:
@@ -35,7 +37,10 @@ Here are the Big O time complexities for the above functions:
 ## Whiteboards
 
 ### CLASS-07: kth-from-end
-![kth-from-end](./kth-from-end.jpeg)
+![kth-from-end](./assets/kth-from-end.jpeg)
 
 ### CLASS-08: zip-lists
-![zip-lists](./linked-list-zipped.jpeg)
+![zip-lists](./assets/linked-list-zipped.jpeg)
+
+### CLASS-37: findCycleLength()
+![find-cycle-length](./assets/CLASS-37_findCycleLength.excalidraw.png)
