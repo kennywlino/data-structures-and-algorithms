@@ -32,3 +32,4 @@ To run your tests
 - CLASS-35 [Graphs](./javascript/graphs/README.md)
 - CLASS-36 [Tree Revisited: isSumTree](./javascript/tree/README.md)
 - CLASS-37 [Linked List Revisited: findCycleLength](./javascript/linked-list/README.md)
+- CLASS-38 [Tree Revisited: invertTree](./javascript/trees/README.md)
