@@ -10,6 +10,8 @@ In CLASS-16, we add a function to the Binary Tree to find the maximum value with
 
 In CLASS-36, we are given the option to select our own problem for practice. For this challenge, I chose to do a problem to check whether a binary tree is a sum tree. A sum tree is defined as a tree where the value of a node is equal to the sum of the nodes present in its left and right subtrees.
 
+In CLASS-38, we are given the option to select another problem for practice. For this challenge, I chose to do a problem to invert a binary tree. An inverted tree is a tree where the root is maintained, but at every level, the left node is moved to the right side and vice versa.
+
 ## Approach & Efficiency
 
 ### Binary Tree
@@ -24,8 +26,13 @@ In CLASS-36, we are given the option to select our own problem for practice. For
 
 ### Is Sum Tree
 
-- Time: O(n) we have to traverse all the nodes in the tree
-- Space: O(n) we have to use the call stack
+- Time: O(n) -- we have to traverse all the nodes in the tree
+- Space: O(n) -- we have to use the call stack
+
+### Invert Binary Tree
+
+- Time: O(n) -- we have to visit all the nodes
+- Space: O(n) -- we're using the call stack
 
 ## API
 
@@ -54,6 +61,11 @@ Extends Binary Tree with these added functions.
 
 ![breadth-first](./assets/breadth-first-tree.png)
 
-## CLASS 36: Is Sum Tree
+### CLASS-36: Is Sum Tree
+
 ![isSumTree](./assets/isSumTree.png)
+
+### CLASS-38: Invert Tree
+
+![invert-tree](./assets/CLASS-38_invertTree.png)
 
